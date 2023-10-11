@@ -1,0 +1,104 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto</title>
+<link rel="icon" href="img/1.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Creepster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="tituloMenu">
+            <h1>Thox</h1>
+        </div>
+
+
+        <nav class="menu">
+            <ul class="navegacion">
+                <li class="item">
+                    <a href="index.html">INICIO</a>
+                </li>
+                <li class="item">
+                    <a href="Articulos.html">ARTICULOS</a>
+                </li>
+                <li class="item">
+                    <a href="Contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="letras"></div>
+
+
+
+
+    <div class="contenedorpago">
+        <div class="cajaForm">
+            <form class="formulario" action="">
+                <p for="nombre">Nombre y Apellido:</p>
+                <input type="text" name="nombre" placeholder="Ingrese el Nombre y Apellido" autocomplete="OFF" required>
+
+                <p for="email">Correo electrónico:</p>
+                <input type="email" name="mail" placeholder="Ingrese el correo electrónico" autocomplete="OFF" required>
+
+                <p for="tarjeta"> Numero de tarjeta:</p>
+                <input type="number" name="tarjeta" placeholder="Ingrese su tarjeta" autocomplete="OFF" required>
+
+                <p for="seg">Codigo de seguridad:</p>
+                <input type="number" name="seg" placeholder="Ingrese el codigo de seguridad" autocomplete="OFF"
+                    required>
+
+                <div class="captcha">
+                    <p>Captcha: </p>
+                    <p id="numeroRandom"></p>
+                </div>
+
+
+                <input type="text" placeholder="Ingrese el número" id="respuesta" autocomplete="OFF">
+
+                <div id="validoInvalido">
+
+                </div>
+
+                <button type="submit" class="botones" id="validar">Validar Captcha / Enviar</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="texto">
+        <div>
+
+            <p class="reco">Aqui puede poner una recomendacion sobre que tipo de material quiere que traigamos a futuro
+            </p>
+        </div>
+        <div class="lista">
+            Producto a agregar:
+            <input id="recom" required>
+
+            <button id="btn-agregar">Agregar</button>
+            <button id="btn-agregar3">Agregar 3</button>
+            <button id="btn-reset">Limpiar todos</button>
+            <button id="borrar-ultimo">Borrar Ultimo</button>
+            <button type="submit" id="btn-enviar">Enviar</button>
+
+            <ul id="listado"></ul>
+        </div>
+
+    </div>
+
+
+    <footer class="footerr">
+        Instagram📷: @Thox-indumentaria
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
